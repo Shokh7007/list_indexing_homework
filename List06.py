@@ -7,7 +7,9 @@ def main(list1):
         list: return answer
     """
     a=0
-    while a<=len(list1) and list1[a]==1:
-        return list1[a]
-        a=a+1
+    while a<len(list1):
+        if list1[a]==1:
+            list1[a]=True
+        a+=1
+    return list1
 print(main([1,0,0,1,0]))
